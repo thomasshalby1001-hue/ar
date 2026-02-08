@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Menu</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      padding: 20px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .item {
+      background: #222;
+      padding: 20px;
+      border-radius: 12px;
+      width: 200px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .item:hover {
+      background: #333;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Our Menu</h1>
+
+<div class="menu">
+  <div class="item" onclick="openAR()">
+    <img src="https://i.imgur.com/5KX1Z9F.png" alt="Pizza">
+    <h2>Pizza</h2>
+    <p>Tap to view in AR</p>
+  </div>
+</div>
+
+<script>
+function openAR() {
+  window.location.href = "ar.html";
+}
+</script>
+
+</body>
+</html>
